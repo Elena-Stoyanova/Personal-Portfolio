@@ -1,0 +1,95 @@
+@import '../../app.scss';
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  color: black;
+
+  .circle {
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 300px;
+    background: white;
+
+    @include mobile {
+      width: 200px;
+    }
+
+    .links {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+
+      .pageLink {
+        font-size: 40px;
+
+        @include mobile {
+          font-size: 20px;
+        }
+      }
+
+      .pageLink:after {
+        background: none repeat scroll 0 0 transparent;
+
+        content: '';
+        display: block;
+        height: 4px;
+        left: 50%;
+        position: absolute;
+        background: orange;
+        transition: width 0.5s ease 0s, left 0.5s ease 0s;
+        width: 0;
+      }
+
+      .pageLink:hover:after {
+        width: 100%;
+        left: 0;
+      }
+
+      .pageLink:active:after {
+        width: 100%;
+      }
+
+      .iconContainer {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        gap: 20px;
+
+        svg:hover {
+          cursor: pointer;
+          fill: orange;
+        }
+
+        svg:focus {
+          outline: none;
+        }
+      }
+    }
+  }
+
+  button {
+    z-index: 999;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: fixed;
+    top: 25px;
+    left: 25px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+}
