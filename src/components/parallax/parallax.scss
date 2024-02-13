@@ -12,14 +12,13 @@
   h1 {
     font-size: 100px;
 
-    // @include mobile {
-    //   font-size: 72px;
-    //   text-align: center
-    // }
-
     @include tablet {
       font-size: 72px;
       text-align: center
+    }
+    
+    @include mobile-M {
+      font-size: 50px;
     }
   }
 
@@ -32,10 +31,10 @@
     position: absolute;
     z-index: 3;
 
-    // @include mobile {
-    //   background-size: contain;
-    //   background-repeat: no-repeat;
-    // }
+    @include mobile-M {
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
   }
 
   .planets {
@@ -47,10 +46,10 @@
     position: absolute;
     z-index: 2;
 
-    // @include mobile {
-    //   background-size: contain;
-    //   background-repeat: no-repeat;
-    // }
+    @include mobile-M {
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
 
   }
 

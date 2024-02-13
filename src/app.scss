@@ -25,36 +25,15 @@ section {
   scroll-snap-align: center;
 }
 
-
-@mixin mobileS {
-  @media (max-width: 500px) {
-    @content;
-  }
+.about {
+  height: 100%;
 }
 
-@mixin middleS {
-  @media (max-width: 1024px) and (min-width: 739px){
-    @content;
-  }
-}
-
-@mixin mobile {
-  @media (max-width: 738px) {
-    @content;
-  }
-}
-
-// @mixin tabletS {
-//   @media (max-width: 768px) {
+// @mixin desktop {
+//   @media (max-width: 1366px) {
 //     @content;
 //   }
 // }
-
-@mixin middle {
-  @media (max-width: 1024px) and (min-width: 739px){
-    @content;
-  }
-}
 
 @mixin tablet {
   @media (max-width: 1024px) {
@@ -62,8 +41,26 @@ section {
   }
 }
 
-@mixin desktop {
-  @media (max-width: 1366px) {
+@mixin mobile-L {
+  @media (max-width: 738px) {
+    @content;
+  }
+}
+
+@mixin mobile-M {
+  @media (max-width: 500px) {
+    @content;
+  }
+}
+
+@mixin mobile-S {
+  @media (max-width: 375px) {
+    @content;
+  }
+}
+
+@mixin mobile-XS {
+  @media (max-width: 320px) {
     @content;
   }
 }

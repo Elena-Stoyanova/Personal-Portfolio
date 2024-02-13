@@ -12,12 +12,12 @@
     justify-content: center;
     flex-direction: column;
 
-    @include mobile {
-      gap: 30px;
-    }
-
     @include tablet {
       padding: 30px;
+    }
+
+    @include mobile-L {
+      gap: 30px;
     }
 
     .wrapper {
@@ -25,13 +25,13 @@
       align-items: center;
       justify-content: space-between;
 
-      // @include mobile {
-      //   flex-direction: column;
-      //   gap: 50px;
-      // }
-
       @include tablet {
         gap: 20px;
+      }
+
+      @include mobile-M {
+        flex-direction: column;
+        gap: 50px;
       }
 
       .text {
@@ -41,20 +41,20 @@
         gap: 30px;
         max-width: 450px;
 
-        // @include mobile {
-        //   text-align: center;
-        //   // gap: 20px;
-        // }
-
         @include tablet {
           gap: 20px;
+        }
+
+        @include mobile-M {
+          text-align: center;
+          // gap: 20px;
         }
 
         h1 {
           font-size: 40px;
           color: orange;
 
-          @include mobile {
+          @include mobile-L {
             font-size: 24px;
           }
         }
@@ -63,7 +63,7 @@
           color: gray;
           font-size: 20px;
 
-          @include mobile {
+          @include mobile-L {
             font-size: 16px;
           }
         }
@@ -72,9 +72,9 @@
       .imgContainer {
         width: 50%;
 
-        // @include mobile {
-        //   width: 100%;
-        // }
+        @include mobile-M {
+          width: 100%;
+        }
 
         img {
           width: 100%;
@@ -88,13 +88,12 @@
       gap: 30px;
       flex: 1;
 
-      // @include mobile {
-      //   align-items: center;
-      // }
+      @include mobile-M {
+        align-items: center;
+      }
 
       h1 {
         color: orange;
-        // font-size: 30px;
       }
 
       .skillContainer {
@@ -103,10 +102,10 @@
         flex-wrap: wrap;
         gap: 16px;
 
-        // @include mobile {
-        //   align-items: center;
-        //   justify-content: center;
-        // }
+        @include mobile-M {
+          align-items: center;
+          justify-content: center;
+        }
 
         .wrapper {
           display: flex;
@@ -119,14 +118,14 @@
           border-radius: 8px;
           box-shadow: 10px 5px 5px hsla(0, 0%, 0%, 0.459);
 
-          @include mobile {
-            width: 40px;
-            height: 35px;
-          }
-
-          @include middle {
+          @include tablet {
             width: 50px;
             height: 40px;
+          }
+
+          @include mobile-L {
+            width: 40px;
+            height: 35px;
           }
 
           .iconContainer {

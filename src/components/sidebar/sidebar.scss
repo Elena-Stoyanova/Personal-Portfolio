@@ -17,7 +17,7 @@
     width: 300px;
     background: white;
 
-    @include mobile {
+    @include mobile-L {
       width: 200px;
     }
 
@@ -34,7 +34,7 @@
       .pageLink {
         font-size: 40px;
 
-        @include mobile {
+        @include mobile-L {
           font-size: 20px;
         }
       }
