@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 const ToggleButton = ({ setOpen }) => {
   return (
     <button onClick={() => setOpen((prev) => !prev)}>
-      <svg height='21' viewBox='0 0 22 19'>
+      <svg height='19' viewBox='0 0 21 19'>
         <motion.path
           strokeWidth='3'
           stroke='black'
@@ -33,24 +33,6 @@ const ToggleButton = ({ setOpen }) => {
           }}
         />
       </svg>
-      {/* <svg
-        width='22'
-        height='19'
-        viewBox='0 0 22 19'
-        fill='none'
-        xmlns='http://www.w3.org/2000/svg'
-      >
-        <g clipPath='url(#clip0_1_2)'>
-          <rect width='22' height='3' rx='1.5' fill='black' />
-          <rect y='8' width='22' height='3' rx='1.5' fill='black' />
-          <rect y='16' width='22' height='3' rx='1.5' fill='black' />
-        </g>
-        <defs>
-          <clipPath id='clip0_1_2'>
-            <rect width='22' height='19' fill='white' />
-          </clipPath>
-        </defs>
-      </svg> */}
     </button>
   );
 };

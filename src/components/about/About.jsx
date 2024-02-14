@@ -55,86 +55,6 @@ const skillVariants = {
   },
 };
 
-// const skills = [
-
-//   {
-//     id: 2,
-//     title: 'HTML',
-//     width: '227',
-//     percentage: '88%',
-//   },
-//   {
-//     id: 3,
-//     title: 'CSS',
-//     width: '227',
-//     percentage: '88%',
-//   },
-//   {
-//     id: 1,
-//     title: 'JavaScript',
-//     width: '227',
-//     percentage: '88%',
-//   },
-//   {
-//     id: 4,
-//     title: 'React',
-//     width: '227',
-//     percentage: '88%',
-//   },
-//   {
-//     id: 5,
-//     title: 'Vue.js',
-//     width: '227',
-//     percentage: '88%',
-//   },
-//   {
-//     id: 6,
-//     title: 'Sass',
-//     width: '227',
-//     percentage: '88%',
-//   },
-//   {
-//     id: 7,
-//     title: 'Figma',
-//     width: '227',
-//     percentage: '88%',
-//   },
-//   {
-//     id: 8,
-//     title: 'REST APIs',
-//     width: '227',
-//     percentage: '88%',
-//   },
-// ];
-
-// const Skills = ({ skill }) => {
-//   return (
-//     <div className='skillContainer'>
-//       <div className='skillText'>
-//         <h5>{skill.title}</h5>
-//         <p>{skill.percentage}</p>
-//       </div>
-//       <svg
-//         width='278'
-//         height='33'
-//         viewBox='0 0 278 33'
-//         fill='none'
-//         xmlns='http://www.w3.org/2000/svg'
-//       >
-//         <rect x='12' y='14' width='255' height='6' rx='3' fill='#2D2D41' />
-//         <rect
-//           x='3'
-//           y='14'
-//           width={skill.width}
-//           height='6'
-//           rx='3'
-//           fill='#FFA500'
-//         />
-//       </svg>
-//     </div>
-//   );
-// };
-
 const skills = [
   {
     id: 2,
@@ -224,10 +144,10 @@ const About = () => {
           >
             <h1>About</h1>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-              elementum purus lorem. Phasellus diam mi, tempus id ex ac,
-              accumsan varius enim. Nullam sit amet egestas sapien. Proin
-              consequat dictum eros, non varius erat placerat non.
+              Hey, my name is Elena Stoyanova. I’m a front-end web developer
+              from Bulgaria. I’m always curious to learn more when it comes to
+              new technologies and creative coding. I'm also passionate about
+              UI/UX design and solving logical problems.
             </p>
           </motion.div>
           <motion.div

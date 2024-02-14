@@ -62,6 +62,10 @@
         @include mobile-L {
           font-size: 16px;
         }
+
+        @include mobile-S {
+          letter-spacing: 6px;
+        }
       }
 
       h1 {
@@ -85,7 +89,7 @@
         gap: 20px;
 
         @include mobile-S {
-          padding: 10px;
+          gap: 10px;
         }
 
         button {
@@ -113,6 +117,9 @@
           right: 0px;
         }
 
+        @include mobile-S {
+          width: 40px;
+        }
       }
     }
   }
@@ -121,19 +128,12 @@
     z-index: 9;
     height: 100%;
 
-    // position: absolute;
-    // top: 40px;
-    // right: 0px;
-
     @include tablet {
       height: 90%;
     }
 
     @include mobile-L {
-      // height: calc(100vh - 300px);
       height: 60%;
-      top: unset;
-      bottom: 0
     }
 
     @include mobile-S {

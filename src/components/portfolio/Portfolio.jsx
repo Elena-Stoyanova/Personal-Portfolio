@@ -5,30 +5,24 @@ import { motion, useScroll, useSpring, useTransform } from 'framer-motion';
 const items = [
   {
     id: 1,
-    title: 'Landing page',
-    img: 'https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis elementum purus lorem. Phasellus diam mi, tempus id ex ac, accumsan varius enim. Nullam sit amet egestas sapien. Proin consequat dictum eros, non varius erat placerat non.',
-  },
-  {
-    id: 2,
     title: 'Tenzies Game',
     img: './tenzies-game.png',
     link: 'https://elena-stoyanova-tenzies-game.netlify.app/',
-    desc: "It's a dice game where you have to have ten identical dice to win. With each roll, the dice you haven't pressed changes! If your pressed dice are different, you must undo holding die by clicking it again and keep rolling until they are all the same. After you win, your best score is saved to local storage.",
+    desc: "This is a game where you have to have ten identical dice to win. With each roll, the dice you haven't pressed change! If you press the wrong die, just click on it to deselect and roll it again. Once you win, your high score is saved to local storage.",
   },
   {
-    id: 3,
+    id: 2,
     title: 'Meme Generator',
     img: './meme-generator.png',
     link: 'https://elena-meme-generator.netlify.app/',
-    desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis elementum purus lorem. Phasellus diam mi, tempus id ex ac, accumsan varius enim. Nullam sit amet egestas sapien. Proin consequat dictum eros, non varius erat placerat non.',
+    desc: "Create your Meme! Click the button to find your inspiration from the image. Then write something funny. And that's it. Just have fun! ",
   },
   {
-    id: 4,
+    id: 3,
     title: 'City Skyline',
     img: './city-skyline.png',
     link: 'https://htmlpreview.github.io/?https://github.com/Elena-Stoyanova/City-Skyline/blob/main/CitySkyline.html',
-    desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis elementum purus lorem. Phasellus diam mi, tempus id ex ac, accumsan varius enim. Nullam sit amet egestas sapien. Proin consequat dictum eros, non varius erat placerat non.',
+    desc: 'I created a city skyline image with clean CSS and HTML. You can choose between light and dark mode via the toggle button.',
   },
 ];
 

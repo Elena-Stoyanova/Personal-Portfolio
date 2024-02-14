@@ -126,8 +126,8 @@ const Contact = () => {
           />
           <textarea rows={8} placeholder='Message' name='message' />
           <motion.button whileHover={{ scale: 1.1 }}>Submit</motion.button>
-          {error && 'Error! Your message has not sent!'}
-          {success && 'Your message has been sent. We′ll get back to you soon!'}
+          {error && <p className='failMessage'>Error! Your message has not sent!</p>}
+          {success && <p className='successMessage'>Your message has been sent. We′ll get back to you soon!</p>}
         </motion.form>
       </div>
     </motion.div>

@@ -25,16 +25,6 @@ section {
   scroll-snap-align: center;
 }
 
-.about {
-  height: 100%;
-}
-
-// @mixin desktop {
-//   @media (max-width: 1366px) {
-//     @content;
-//   }
-// }
-
 @mixin tablet {
   @media (max-width: 1024px) {
     @content;
@@ -59,8 +49,14 @@ section {
   }
 }
 
-@mixin mobile-XS {
-  @media (max-width: 320px) {
-    @content;
+.about {
+  @include mobile-M {
+    height: 100%;
+  }
+}
+
+#Contact {
+  @include mobile-M {
+    height: 100%;
   }
 }

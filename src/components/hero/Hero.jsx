@@ -79,7 +79,6 @@ const Hero = () => {
       >
         Front-End Developer UI Designer
       </motion.div>
-      
     </div>
   );
 };
