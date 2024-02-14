@@ -78,8 +78,8 @@ const skills = [
   },
   {
     id: 5,
-    title: 'Vue.js',
-    img: './vue.png',
+    title: 'Vite',
+    img: './vite.png',
   },
   {
     id: 6,
@@ -156,7 +156,7 @@ const About = () => {
             initial='initial'
             animate={isInView && 'animate'}
           >
-            <img src='./Solar-System.png' alt='' />
+            <img src='./solar-system.png' alt='' />
           </motion.div>
         </div>
         <div className='skills'>
