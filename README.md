@@ -1,4 +1,19 @@
-# React + Vite
+# Personal Portfolio
+For my portfolio, have used React + Vite. I used Framer Motion for animations, and Email.js for sending emails. Figma and Procreate I used to create some illustrations and icons.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Click here: 👉 [elenastoyanova.com](https://elenastoyanova.com/)
+
+### Built with
+
+- HTML
+- CSS
+- Sass
+- JavaScript
+- [React](https://reactjs.org/) - JS library
+- Email.js
+- Vite
+- Framer Motion
+- Figma
+- Procreate
+
 
