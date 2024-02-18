@@ -12,13 +12,20 @@ const items = [
   },
   {
     id: 2,
+    title: 'Directrix',
+    img: './directrix.png',
+    link: 'https://directrix.netlify.app/',
+    desc: "This is a Figma to HTML project. I have used the Google Maps API and played around with it here. The project is built with plain HTML, CSS, and JavaScript. ",
+  },
+  {
+    id: 3,
     title: 'Meme Generator',
     img: './meme-generator.png',
     link: 'https://elena-meme-generator.netlify.app/',
     desc: "Create your Meme! Click the button to find your inspiration from the image. Then write something funny. And that's it. Just have fun! ",
   },
   {
-    id: 3,
+    id: 4,
     title: 'City Skyline',
     img: './city-skyline.png',
     link: 'https://htmlpreview.github.io/?https://github.com/Elena-Stoyanova/City-Skyline/blob/main/CitySkyline.html',
