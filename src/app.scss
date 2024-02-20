@@ -37,6 +37,12 @@ section {
   }
 }
 
+@mixin mobile-M-L {
+  @media (max-width: 570px) {
+    @content;
+  }
+}
+
 @mixin mobile-M {
   @media (max-width: 500px) {
     @content;
@@ -49,13 +55,7 @@ section {
   }
 }
 
-.about {
-  @include mobile-M {
-    height: 100%;
-  }
-}
-
-#Contact {
+.about, .contact {
   @include mobile-M {
     height: 100%;
   }
