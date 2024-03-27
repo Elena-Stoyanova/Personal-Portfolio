@@ -15,6 +15,7 @@
   @include mobile-L {
     width: 100%;
     flex-direction: column;
+    // margin-bottom: 10vh;
   }
 
   .textContainer {
@@ -51,11 +52,9 @@
     }
 
     .item {
-
       h2 {
         @include mobile-M {
           font-size: 20px;
-    
         }
       }
     }
@@ -68,7 +67,7 @@
     @include mobile-L {
       width: 100%;
     }
-   
+
     .phoneSvg {
       position: absolute;
       stroke: orange;
@@ -78,7 +77,6 @@
       transform: translate(-50%, -50%);
 
       svg {
-
         @include tablet {
           width: 320px;
           height: 320px;
@@ -97,8 +95,12 @@
       gap: 20px;
 
       @include mobile-L {
-        margin-bottom: 15px;
-      } 
+        margin-bottom: 10vh;
+      }
+
+      input:focus {
+        background-color: transparent;
+      }
 
       input,
       textarea {
@@ -109,7 +111,7 @@
         border-radius: 5px;
 
         @include tablet {
-          padding: 10px;
+          padding: 15px;
         }
       }
 
@@ -141,7 +143,6 @@
 
         @include mobile-M {
           padding: 10px;
-          
         }
       }
 

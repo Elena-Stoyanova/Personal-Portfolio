@@ -53,12 +53,16 @@ const Hero = () => {
             Front-End Developer and UI Designer
           </motion.h1>
           <motion.div variants={textVariants} className='buttons'>
+          <a href='#Portfolio'>
             <motion.button variants={textVariants} whileHover={{ scale: 1.1 , backgroundColor: 'white' , color: 'black'}} >
-              <a href='#Portfolio'>See the Latest Works</a>
+              See the Latest Works
             </motion.button>
+            </a>
+            <a href='#Contact'>
             <motion.button variants={textVariants} whileHover={{ scale: 1.1 }} style={{backgroundColor: 'white' , color: 'black'}}>
-              <a href='#Contact'>Contact me</a>
+              Contact me
             </motion.button>
+            </a>
           </motion.div>
           <motion.img
             variants={textVariants}

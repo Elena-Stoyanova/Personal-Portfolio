@@ -17,12 +17,18 @@ body {
 
 a {
   text-decoration: none;
-  color: inherit;
+  color: #0c0c1d;
 }
 
 section {
   height: 100vh;
   scroll-snap-align: center;
+}
+
+@mixin dekstop {
+  @media (max-width: 1200px) {
+    @content;
+  }
 }
 
 @mixin tablet {
@@ -55,8 +61,14 @@ section {
   }
 }
 
-.about, .contact {
+.about {
   @include mobile-M {
+    height: 100%;
+  }
+}
+
+.contact {
+  @include mobile-L {
     height: 100%;
   }
 }

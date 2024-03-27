@@ -7,8 +7,12 @@
   position: relative;
   padding-top: 50px;
 
+  @include dekstop {
+    padding-inline: 30px;
+  }
+
   @include tablet {
-    padding-inline: 5vw;
+    padding-inline: 30px;
   }
 
   @include mobile-L {
@@ -37,7 +41,7 @@
       flex-direction: column;
       justify-content: center;
       gap: 40px;
-    
+
       @include tablet {
         gap: 30px;
       }
@@ -70,7 +74,7 @@
 
       h1 {
         font-size: 60px;
-        
+
         @include tablet {
           font-size: 34px;
         }
@@ -82,7 +86,7 @@
 
       .buttons {
         z-index: 9;
-        display:flex;
+        display: flex;
         justify-content: flex-start;
         align-items: center;
         flex-wrap: wrap;
@@ -117,8 +121,13 @@
           right: 0px;
         }
 
-        @include mobile-S {
+        @include mobile-M {
           width: 40px;
+        }
+
+        @include mobile-S {
+          bottom: 220px;
+          left: 30px;
         }
       }
     }

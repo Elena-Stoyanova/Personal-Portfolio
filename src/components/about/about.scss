@@ -12,6 +12,10 @@
     justify-content: center;
     flex-direction: column;
 
+    @include dekstop {
+      padding: 30px;
+    }
+
     @include tablet {
       padding: 30px;
     }

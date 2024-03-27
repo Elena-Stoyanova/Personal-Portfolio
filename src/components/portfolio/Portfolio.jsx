@@ -57,23 +57,23 @@ const Single = ({ item }) => {
             <h2>{item.title}</h2>
             <p>{item.desc}</p>
             <div className='buttonContainer'>
-              <motion.button className='demo' whileHover={{ scale: 1.1 }}>
-                <a href={item.link} target='blank'>
+              <a href={item.link} target='blank'>
+                <motion.button className='demo' whileHover={{ scale: 1.1 }}>
                   See Demo
-                </a>
-              </motion.button>
-              <motion.button
-                className='gitHub'
-                whileHover={{
-                  scale: 1.1,
-                  backgroundColor: 'orange',
-                  color: 'black',
-                }}
-              >
-                <a href={item.gitHub} target='blank'>
+                </motion.button>
+              </a>
+              <a href={item.gitHub} target='blank'>
+                <motion.button
+                  className='gitHub'
+                  whileHover={{
+                    scale: 1.1,
+                    backgroundColor: 'orange',
+                    color: 'black',
+                  }}
+                >
                   GitHub
-                </a>
-              </motion.button>
+                </motion.button>
+              </a>
             </div>
           </motion.div>
         </div>
